@@ -1,8 +1,9 @@
 
-setwd("C:/Users/cris/Desktop/OptimizandoR_Sep22/github-workshop-main_CAK")
+#he borrado el setpath
 library("knitr")
 library("usethis")
-
+library("here")
+here()
 
 ########################################################
 ##             CONFIGURAR TU GITHUB               ######
