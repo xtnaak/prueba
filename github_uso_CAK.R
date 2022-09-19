@@ -1,5 +1,6 @@
 
 #he borrado el setpath
+#gracias, ha funcionado la edicion
 library("knitr")
 library("usethis")
 library("here")
@@ -20,4 +21,5 @@ gitcreds::gitcreds_set()
 ## Manos a la obra, cargamos el dataset
 install.packages("remotes") #Instalo los datos desde internet
 remotes::install_github("lter/lterdatasampler")
+
 
