@@ -22,5 +22,6 @@ datos <- read_csv("data.csv")
 ggplot(datos) + geom_point(aes(work.hours,happiness))
 modelo <- lm(happiness ~ work.hours, datos)
 
+##hola
 
 
