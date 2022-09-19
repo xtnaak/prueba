@@ -1,5 +1,6 @@
 
 #he borrado el setpath
+#gracias, ha funcionado la edicion
 library("knitr")
 library("usethis")
 library("here")
@@ -16,12 +17,8 @@ git_sitrep()
 usethis::create_github_token()
 gitcreds::gitcreds_set()
 
-
-
-
 library(tidyverse)
 datos <- read_csv("data.csv")
-
 ggplot(datos) + geom_point(aes(work.hours,happiness))
 modelo <- lm(happiness ~ work.hours, datos)
 
