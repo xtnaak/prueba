@@ -18,3 +18,9 @@ gitcreds::gitcreds_set()
 
 
 
+library(tidyverse)
+datos <- read_csv("data.csv")
+
+ggplot(datos) + geom_point(aes())
+
+modelo <- lm(happiness ~ workhours)
