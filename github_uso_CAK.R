@@ -3,7 +3,6 @@
 library("knitr")
 library("usethis")
 library("here")
-here()
 
 ########################################################
 ##             CONFIGURAR TU GITHUB               ######
@@ -16,13 +15,7 @@ git_sitrep()
 usethis::create_github_token()
 gitcreds::gitcreds_set()
 
-
-
-
-library(tidyverse)
-datos <- read_csv("data.csv")
-
-ggplot(datos) + geom_point(aes(work.hours,happiness))
-modelo <- lm(happiness ~ work.hours, datos)
-
+## Manos a la obra, cargamos el dataset
+# install.packages("remotes")
+remotes::install_github("lter/lterdatasampler")
 
